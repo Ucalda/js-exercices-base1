@@ -5,14 +5,15 @@
     <meta charset="UTF-8">
 </head>
 <body>
-<form>
-    <label for="nom">Nom : </label>
-    <input type="text" name="nom" id="nom" value=""/>
-    <label for="prenom">Prénom : </label>
+<form name="form1">
+    <label for="prenom">prenom : </label>
     <input type="text" name="prenom" id="prenom" value=""/>
-    <label for="ville">Ville : </label>
-    <input type="text" name="ville" id="ville"  value=""/>
-    <button  name="valider" id="valider">Valider</button>
+    <button name="valider" id="valider" onclick="controle(form1)">valider</button>
 </form>
+<script type="text/javascript">
+function controle(form1){
+var test = document.form1.prenom.value;
+alert("bonjour" + test);}
+</script>
 </body>
 </html>
